@@ -15,7 +15,8 @@
     
     branch.setBranchViewData({data: {'$journeys_cta': 'https://58wdy.app.link/6MlOkUKzZub?~channel='+ utmmedium +'&~campaign='+ utmcampaign +'&~feature='+ utmsource +'','$deeplink_no_attribution':'true' }});
 	
-    document.querySelector('meta[name="branch:deeplink:description"]').setAttribute("content", utmsource);
+    //document.querySelector('meta[name="branch:deeplink:description"]').setAttribute("content", utmsource);
+    document.getElementsByTagName('meta')["branch:deeplink:description"].content = utmsource;
   </script>
   <meta charset="utf-8">
   <meta name="utmsource_meta_test" content=utmsource>
